@@ -50,7 +50,7 @@ h2 {
     font-family: var(--itim);
     text-align: center;
     text-transform: uppercase;
-    padding: 60px 0 20px;
+    padding: 60px 0 0;
     margin: 0;
     letter-spacing: 0.1em;
     color: var(--black);
@@ -65,7 +65,15 @@ h3, h4 {
 
 p {
     font-size: 1em;
+    font-family: var(--indie);
+    letter-spacing: 0.05em;
+}
 
+.contenttxt {
+   padding: 10px 20px; 
+   margin: 10px 0;  
+   border-top: 7px double var(--pink2);
+   border-bottom: 7px solid var(--pink1);
 }
 
 /*-- NAVIGATION --*/
