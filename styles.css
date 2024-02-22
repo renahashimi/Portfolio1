@@ -53,9 +53,8 @@ h2 {
     padding: 60px 0 20px;
     margin: 0;
     letter-spacing: 0.1em;
-    color: var(--pink1);
-    -webkit-text-stroke: 1.5px var(--black);
-    filter: drop-shadow( 0 0 20px var(--pink2));
+    color: var(--black);
+    text-shadow: 0 0 10px var(--pink2);
 }
 
 h3, h4 {
