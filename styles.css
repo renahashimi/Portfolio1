@@ -162,14 +162,11 @@ p {
     font-family: var(--carattere);
     margin: -20px 30px 0;
 }
-.myimg {
-    padding: 0 0 30px;
-}
 
 .myimg img {
     position: relative;
     max-width: 200px;
-    margin: 20px 30px;
+    margin: 5px 30px 30px;
     border-radius: 90px 50%;
     border-right: 2px solid var(--black);
     border-bottom: 4px solid var(--black); 
