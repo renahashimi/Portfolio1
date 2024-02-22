@@ -1,9 +1,12 @@
 :root {
     --white: #fff;
     --black: #000;
-    --pink1: #e8c5d3;
-    --pink2: #d393ad;
-    --pink3: #daa1b1;
+    --pink1: #ffe3e7;
+    --pink2: #ffbec8;
+    --carattere: "Carattere", cursive;
+    --indie: "Indie Flower", cursive;
+    --itim: "Itim", cursive;
+    --gill: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -13,6 +16,9 @@ body {
     box-sizing: border-box;
     background-color: #fff;
     padding-bottom: 100px;
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
 }
 
 ul, li, a {
@@ -33,19 +39,23 @@ button {
 
 
 h1 {
-    font-size: 1.3em;
+    font-size: 2em;
+    font-family: var(--itim);
+    text-transform: uppercase;
+    margin: 30px;
 }
  
 h2 {
     font-size: 1.5em;
+    font-family: var(--itim);
     text-align: center;
-    padding: 40px 0 10px;
+    text-transform: uppercase;
+    padding: 60px 0 20px;
     margin: 0;
     letter-spacing: 0.1em;
     color: var(--pink1);
     -webkit-text-stroke: 1.5px var(--black);
-    filter: drop-shadow( 0 0 5px var(--pink2));
-    text-shadow: 0 5px 4px var(--black);
+    filter: drop-shadow( 0 0 20px var(--pink2));
 }
 
 h3, h4 {
@@ -64,6 +74,8 @@ p {
 .navigation ul {
     display: grid;
     grid-template-columns: repeat(4, 23%);
+    font-family: var(--gill);
+    font-weight: 700;
     justify-content: space-evenly;
     padding: 5px 0;
     text-align: center;
@@ -75,9 +87,12 @@ p {
     box-sizing: border-box;
     background-color: var(--pink1);
     width: 100%;
+    max-width: 1300px;
     height: fit-content;
     z-index: 10;
-    border-top: 2px solid var(--black);
+    border-top: 4px groove var(--black);
+    box-shadow: 0 -3px 15px var(--black);
+    border-radius: 20px 20px 0 0;
 }
 
 .navigation ul li a {
@@ -103,15 +118,17 @@ p {
     border-radius: 0;
 }
 
-.skillcontainer {
+.skillcontainer, .cards {
     border-radius: 0 0 10px 10px;
 }
 
+
 /*-- HOME --*/
+
 
 .homecontainer {
     display: block;
-    background-image: url(/images/paintedalcoholink.jpeg);
+    background-image: url(/images/valentinepink.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,45 +136,37 @@ p {
     justify-content: center;
     width: 100%;
     height: 400px;
-    
 }
 
 .homecontent {
     display: block;
     text-align: center;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     height: max-content;
     border-radius: 50%;
     margin: 20px auto;
 }
 
 .hometxt {
-    background-color: rgb(255, 250, 250, 0.35);
-    margin: auto;
+    /* background-color: rgb(255, 250, 250, 0.35); */
     justify-content: center;
-    font-size: 1.2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* .myimg {
-    background-color: #fff;
-    margin: auto;
-    border-radius: 40px 70% / 40px 60%;
-    border: 4px outset var(--pink2);
-    margin-top: 10px;
-    width: 250px;
-    height: 250px;
-    /* box-shadow: 0 0 40px rgb(100, 80, 100) inset;
-} */
+.hometxt p {
+    font-size: 3em;
+    font-family: var(--carattere);
+    margin: -20px 30px 0;
+}
 
 .myimg img {
     position: relative;
     max-width: 200px;
-    border-radius: 0 0 30px 20%;
-    margin: 30px 0 0 30px;
-    border-right: 4px solid var(--pink2);
-    border-bottom: 8px solid var(--pink2);
-    border-radius: 90px 70%;
+    border-radius: 0 0 20px 10%;
+    margin: 20px 30px;
+    border-radius: 90px 50%;
+    border-right: 2px solid var(--black);
+    border-bottom: 4px solid var(--black); 
+    float: right;
 }
 
 /* .box1 {
@@ -195,7 +204,6 @@ p {
 
 
 .aboutcontainer {
-    border-top: 6px double var(--pink2);
 }
 
 
@@ -210,8 +218,7 @@ p {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;
     margin: auto ;
-    padding: 30px ;
-  
+    padding: 30px ; 
 }
 
 .skills img {
@@ -224,7 +231,6 @@ p {
 }
 
 
-
 /*-- PROJECTS --*/
 
 
@@ -232,7 +238,6 @@ p {
     display: block;
     width: 100%;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 .typeproject {
@@ -240,8 +245,9 @@ p {
 }
 
 .cards {
-    background: linear-gradient(var(--pink1), var(--white) 50%, var(--pink2));
-    padding: 10px 0 20px;
+    background: linear-gradient(var(--pink2), var(--white) 50%, var(--pink2));
+    padding: 10px 0 30px;
+    margin: auto;
 }
 
 .cards img {
@@ -251,11 +257,12 @@ p {
 .card1, .card2, .card3 {
     width: 90%;
     background-color: var(--white);
-    border: 2px solid var(--pink2);
+    border: 2px solid var(--black);
     margin: 20px auto;
     box-shadow: 0 0 20px var(--black);
     justify-content: center;
     text-align: center;
+    max-width: 600px;
 }
 
 .card3 {
@@ -285,3 +292,38 @@ p {
 
 
 /*-- CONTACT --*/
+
+
+@media only screen and (min-width: 768px) {
+
+
+.navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    margin: 0;
+    bottom: 20px;
+    right: 0;
+    width: 50%;
+    border: 4px groove var(--black);
+    border-right: none;
+    border-radius: 0;
+}
+
+
+
+/*-- HOME --*/
+/*-- ABOUT --*/
+
+
+.skills {
+    grid-template-columns: repeat(6, auto);
+    max-width: 900px;
+}
+
+/*-- PROJECT --*/
+/*-- CONTACT --*/
+
+}
