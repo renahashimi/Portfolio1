@@ -15,7 +15,7 @@
 body {
     box-sizing: border-box;
     background-color: #fff;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     max-width: 1300px;
     justify-content: center;
     margin: auto;
@@ -162,7 +162,7 @@ p {
     max-width: 200px;
     margin: 5px 30px 30px;
     border-radius: 90px 50%;
-    border-bottom: 4px solid var(--black); 
+    border-bottom: 2px solid var(--black); 
     float: right;
 }
 
@@ -289,6 +289,15 @@ p {
 
 
 /*-- CONTACT --*/
+/*-- FOOTER --*/
+
+footer p {
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--pink1);
+}
+
 
 
 @media only screen and (min-width: 768px) {
