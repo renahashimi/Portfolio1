@@ -495,7 +495,9 @@ footer p {
 
 /*-- PROJECT --*/
 
-
+.contenttxtinfo p {
+    padding: 10px 40px;
+}
 
 /*-- ABOUT --*/
 
