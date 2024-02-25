@@ -23,7 +23,7 @@ body {
     padding-bottom: 70px;
     max-width: 1200px;
     justify-content: center;
-    margin: -20px auto 0;
+    margin: auto;
 }
 
 ul, li, a {
