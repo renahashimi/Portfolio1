@@ -116,25 +116,6 @@ p {
     border-radius: 0 0 10px 10px;
 }
 
-.aboutcontainer, 
-.projectcontainer, 
-.contactcontainer { 
-    animation: fade 0.8s ease-in-out both;
-    animation-timeline: view();
-}
-@keyframes fade {
-    10% {
-        opacity: 0.6;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.2;
-    }
-    
-}
-
 .homecontainer {
     border-radius: 0;
 }
@@ -145,7 +126,6 @@ p {
 
 
 /*-- NAVIGATION --*/
-
 
 header {
     justify-content: center;
@@ -350,7 +330,7 @@ header {
     box-shadow: 0 0 10px var(--black);
     margin: 0 10px;
     padding: 3px 0;
-    border-radius: 30px 90%;
+    border-radius: 80% 40px;
     transition: transform 0.8s;
 }
 
@@ -613,7 +593,7 @@ header {
 
 .card1, .card2, .card3 {
     display: block;
-    max-width: 280px;
+    max-width: 400px;
     height: 500px;
 }
 
@@ -622,7 +602,8 @@ header {
 }
 
 .cards img {
-    height: 150px;
+    height: 180px;
+    object-fit: cover;
 }
 
 
