@@ -16,7 +16,7 @@
 
 body {
     box-sizing: border-box;
-    background-image: url(/images/beige-earth-tone.jpeg);
+    background-image: url(/images/neutral-soft-abstract.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-color: #fff;
@@ -186,7 +186,7 @@ header {
 
 .homecontainer {
     display: block;
-    background-image: url(/images/neutral-earth-tone.jpeg);
+    background-image: url(/images/_neutral-abstract-.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,6 +209,7 @@ header {
 .hometxt {
     /* background-color: rgb(255, 250, 250, 0.35); */
     justify-content: left;
+    margin-top: 30px;
 }
 
 .hometxt p {
@@ -220,7 +221,7 @@ header {
 .myimg img {
     position: relative;
     max-width: 200px;
-    margin: 5px 30px 30px;
+    margin: -10px 30px 30px;
     border-radius: 90px 50%;
     /* border-bottom: 2px solid var(--black);  */
     float: right;
@@ -471,15 +472,11 @@ footer p {
 
 /*-- HOME --*/
 
-.homecontainer {
-   margin-top: -40px;
-}
-
 .homecontent {
     display: flex; 
     justify-content: center;
     max-width: 1000px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .hometxt {
@@ -527,6 +524,8 @@ body {
 h2 {
     font-size: 2.2em;
     padding-top: 80px;
+    min-width: 300px;
+
 }
 
 h3 {
@@ -572,8 +571,8 @@ header {
 /*-- HOME --*/
 
 .homecontainer {
-    margin-top: 0;
- }
+    background-position: top; 
+}
  
 
 /*-- PROJECT --*/
