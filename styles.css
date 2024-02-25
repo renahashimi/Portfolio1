@@ -124,7 +124,7 @@ p {
 }
 @keyframes fade {
     10% {
-        opacity: 0.2;
+        opacity: 0.6;
     }
     70% {
         opacity: 1;
