@@ -1,8 +1,10 @@
 :root {
     --white: #fff;
     --black: #000;
-    --pink1: #ffe3e7;
-    --pink2: #ff99a9;
+    --color1: #F0E7E0;
+    --color2: #bba99b;
+    --color3: #B4B4B4;
+    --color4: #0000004a;
     --carattere: "Carattere", cursive;
     --indie: "Indie Flower", cursive;
     --itim: "Itim", cursive;
@@ -14,11 +16,14 @@
 
 body {
     box-sizing: border-box;
+    background-image: url(/images/beige-earth-tone.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
     background-color: #fff;
     padding-bottom: 70px;
-    max-width: 1300px;
+    max-width: 1200px;
     justify-content: center;
-    margin: auto;
+    margin: -20px auto 0;
 }
 
 ul, li, a {
@@ -39,73 +44,120 @@ button {
 
 
 h1 {
-    font-size: 2em;
-    font-family: var(--itim);
+    font-size: 1.6em;
+    font-family: var(--gill);
     text-transform: uppercase;
     margin: 30px;
 }
  
 h2 {
+    display: block;
     font-size: 1.5em;
     font-family: var(--itim);
+    max-width: 200px;
     text-align: center;
     text-transform: uppercase;
-    padding: 60px 0 0;
-    margin: 0;
+    padding: 60px 0 15px;
+    margin: auto;
     letter-spacing: 0.1em;
     color: var(--black);
-    text-shadow: 0 0 10px var(--pink2);
 }
 
-h3, h4 {
-    font-size: 1.1em;
-    text-transform: uppercase;
 
+h3, h4 {
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 p {
     font-size: 1em;
-    font-family: var(--indie);
+    font-family: var(--itim);
     letter-spacing: 0.05em;
 }
 
-.contenttxt {
-   padding: 10px 20px; 
-   margin: 10px 0;  
-   border-top: 7px double var(--pink2);
-   border-bottom: 7px solid var(--pink1);
+.contenttxt, .contenttxtinfo {
+    background-color: #ffffffa8; 
+    margin: auto; 
+    padding: 20px 0;
+    text-align: center;
+    border-top: 7px double var(--color3);
+    border-bottom: 7px solid var(--color3);
+}
+
+.contenttxt h3 {
+    font-family: var(--carattere);
+    font-size: 2em;
+    margin: 0;
+    padding: 5px 0 10px;
+    text-transform: capitalize;
+}
+
+.contenttxt p, .contenttxtinfo p {
+    display: block;
+    padding: 5px; 
+    max-width: 800px;   
+    font-size: 1.1em; 
+    text-align: center; 
+    margin: auto;
+}
+
+.contenttxtinfo p {
+    text-align: left;
+    padding: 15px;
 }
 
 /*-- NAVIGATION --*/
 
-.navigation ul {
-    display: grid;
-    grid-template-columns: repeat(4, 23%);
-    font-family: var(--gill);
-    font-weight: 700;
-    justify-content: space-evenly;
-    padding: 5px 0;
+
+header {
+    justify-content: center;
     text-align: center;
-    letter-spacing: 0.2em;
-    font-size: 0.6em;
     margin: 20px auto 0;
     position: fixed;
     bottom: 0px;
     box-sizing: border-box;
-    background-color: var(--pink1);
+    background-color: var(--color4);
     width: 100%;
-    max-width: 1300px;
-    height: 75px;
+    max-width: 1200px;
+    height: 85px;
     z-index: 10;
     border-top: 4px groove var(--black);
     box-shadow: 0 -3px 15px var(--black);
     border-radius: 20px 20px 0 0;
 }
 
-.navigation a {
+.navigation ul {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    margin: auto;
+    max-width: 500px;
+    justify-content: center;
+    font-family: var(--gill);
+    font-weight: 700;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 5px 0;
+}
+
+.navigation li {
+    display: block;
+    width: 90%; 
+    max-width: 80px;
+    margin: auto;
+    padding-top: 10px;
+    background: linear-gradient(0.39turn, var(--color2), var(--white) 80%);
+    border-radius: 20%;
+    border: 1px solid var(--black);
+}
+
+.navigation li:hover {
+    background: var(--white);
+}
+
+.navigation p {
     display: block;
     justify-content: center;
-    padding: 4px;
+    margin-top: 0;
 }
 
 .navigation img {
@@ -134,7 +186,7 @@ p {
 
 .homecontainer {
     display: block;
-    background-image: url(/images/valentinepink.jpeg);
+    background-image: url(/images/neutral-earth-tone.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,21 +197,22 @@ p {
 }
 
 .homecontent {
-    display: block;
-    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto;
     /* backdrop-filter: blur(5px); */
     height: max-content;
+    max-width: 550px;
     border-radius: 50%;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .hometxt {
     /* background-color: rgb(255, 250, 250, 0.35); */
-    justify-content: center;
+    justify-content: left;
 }
 
 .hometxt p {
-    font-size: 3em;
+    font-size: 2.6em;
     font-family: var(--carattere);
     margin: -20px 30px 0;
 }
@@ -204,36 +257,6 @@ p {
     background-color: var(--pink3);
 } */
 
-/*-- ABOUT --*/
-
-
-.aboutcontainer {
-}
-
-
-.skillcontainer {
-    background-color: var(--pink1);    
-    text-align: center;
-    padding: 10px 0 0;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto auto;
-    margin: auto ;
-    padding: 30px ; 
-}
-
-.skills img {
-    max-width: 30%;
-    margin: 10px auto;
-    justify-content: center;
-    border: 2.5px solid var(--pink2);
-    border-radius: 0 0 15px 15px / 0 0 70px 70px ;
-    padding: 2px 10px;
-}
-
 
 /*-- PROJECTS --*/
 
@@ -245,11 +268,12 @@ p {
 }
 
 .typeproject {
-    margin-top: -15px;
+    margin-top: -10px;
+    font-size: 0.9em;
 }
 
 .cards {
-    background: linear-gradient(var(--pink1), var(--pink2) 50%, var(--pink1));
+    background: linear-gradient(0.35turn, var(--color2), var(--white) 50%, var(--color2));
     padding: 10px 0 30px;
     margin: auto;
 }
@@ -272,6 +296,7 @@ p {
 .card3 {
     margin-bottom: 0;
 }
+ 
 
 /* 
 .card1 p, 
@@ -289,54 +314,297 @@ p {
     justify-content: center;
 }
 
-.links ul a {
-    padding: 0 20px;
+.links ul li a {
+    padding: 30px 10px;
+}
+
+.links li {
+    width: 80px;
+    border: 1px solid var(--color2);
+    box-shadow: 0 0 10px var(--black);
+    margin: 0 10px;
+    padding: 3px 0;
+    border-radius: 90% 30px;
+}
+
+.links li:hover {
+    border: 1px solid var(--black);
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    height: fit-content;
+}
+
+.tools p {
+    font-size: 0.7em;
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+    padding: 0 5px;
+    margin: 0 3px;
 }
 
 
+/*-- ABOUT --*/
+
+
+.aboutcontainer {
+}
+
+
+.skillcontainer {
+    background-color: var(--color1);    
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto auto;
+    max-width: 500px;
+    justify-content: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.skills div {
+    display: block;
+    width: 80%;
+    max-width: 80px;
+    margin: 20px auto;
+    border: 2.5px solid var(--color2);
+    border-radius: 0 0 15px 15px / 0 0 70px 70px ;
+}
+
+.skills p {
+    margin-top: -10px;
+    font-size: 0.7em;
+}
+
+.skills img {
+    max-width: 60%;
+    margin: 10px auto;
+    justify-content: center;
+
+}
+
+.contactcontainer .contenttxt {
+    display: block;
+    background-image: url(/images/minimal-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+}
 
 /*-- CONTACT --*/
+
+
+
 /*-- FOOTER --*/
 
 footer p {
     justify-content: center;
     text-align: center;
     padding: 30px 0;
-    background-color: var(--pink1);
+    margin: 0 auto 30px;
+    background-color: var(--color2);
 }
 
+
+
+@media only screen and (min-width: 550px) {
+
+/*-- PROJECT --*/
+
+.hometxt {
+    margin-top: 60px;
+}
+
+.myimg {
+    margin-top: -50px;
+}
+
+/*-- PROJECT --*/
+
+.card1, .card2, .card3 {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+
+.cardblock {
+    background-color: var(--color1);
+}
+
+.cardblock h3, .cardblock p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.cards img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    object-fit: cover;
+}
+
+.cardtxtblock {
+    display: grid;
+    grid-template-rows: 60% 10% 20%;
+}
+
+
+}
 
 
 @media only screen and (min-width: 768px) {
 
-
 .navigation ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px 0;
-    letter-spacing: 0.2em;
-    font-size: 0.8em;
-    margin: 0;
-    bottom: 20px;
-    right: 0;
-    width: 50%;
-    border: 4px groove var(--black);
-    border-right: none;
-    border-radius: 0;
+    height: 80px;
+}
+
+.navigation li {
+    margin: 0 auto 10px;
+}
+
+/*-- HOME --*/
+
+.homecontainer {
+   margin-top: -40px;
+}
+
+.homecontent {
+    display: flex; 
+    justify-content: center;
+    max-width: 1000px;
+    margin-top: 70px;
+}
+
+.hometxt {
+    font-size: 1.4em;
+}
+.myimg  {
+    margin-top: 40px;
+    float: none;
 }
 
 
 
-/*-- HOME --*/
+
+/*-- PROJECT --*/
+
+
+
 /*-- ABOUT --*/
 
 
 .skills {
-    grid-template-columns: repeat(6, auto);
-    max-width: 900px;
+    grid-template-columns: repeat(8, auto);
+    max-width: 1200px;
+    padding: 0;
+    box-shadow: inset 0 0 20px var(--color2);
 }
 
-/*-- PROJECT --*/
+.skills div {
+    width: 90%;
+}
+
+
 /*-- CONTACT --*/
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+body {
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.2em;
+    padding-top: 80px;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p, .contenttxt p, .contenttxtinfo p {
+    font-size: 1.3em;
+}
+
+.contenttxt h3 {
+    font-size: 2.5em;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    top: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 65px;
+    margin: 0;
+    padding: 5px 0;
+    border: none;
+    box-shadow: 0 3px 10px var(--black);
+}
+
+.navigation ul {
+    display: flex;
+    max-width: 70%;
+    padding: 0 10px 0 0;
+}
+
+.navigation li {
+    margin: 0 10px;
+    padding: 5px 10px 0;
+    min-width: 25%;
+    height: 50px;
+}
+
+
+/*-- HOME --*/
+
+.homecontainer {
+    margin-top: 0;
+ }
+ 
+
+/*-- PROJECT --*/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);   
+    justify-content: center;
+}
+
+.card1, .card2, .card3 {
+    display: block;
+    max-width: 280px;
+    height: 500px;
+}
+
+.cardblock {
+    background-color: var(--white);
+}
+
+.cards img {
+    height: 150px;
+}
+
+
+/*-- ABOUT --*/
+
+.skills {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
 
 }
