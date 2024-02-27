@@ -14,8 +14,11 @@
 
 /*-- ALL CONTENT --*/
 
-body {
+*,*::before, *::after {
     box-sizing: border-box;
+}
+
+body {
     background-image: url(/images/neutral-soft-abstract.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -94,7 +97,7 @@ p {
     text-transform: capitalize;
 }
 
-.contenttxt p, .contenttxtinfo p {
+.contenttxtinfo p {
     display: block;
     padding: 5px; 
     max-width: 800px;   
@@ -114,14 +117,29 @@ p {
 .contactcontainer {
     box-shadow: 0 10px 17px var(--black);
     border-radius: 0 0 10px 10px;
+    animation: move 0.6s linear;
 }
 
+@keyframes move {
+    from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0%);
+      }
+    
+}
 .homecontainer {
     border-radius: 0;
 }
 
 .skillcontainer, .cards {
     border-radius: 0 0 10px 10px;
+}
+
+.openbtn {
+    display: none;
+    visibility: hidden;
 }
 
 
@@ -287,20 +305,23 @@ header {
 
 .card1, .card2, .card3 {
     width: 90%;
+    max-width: 500px;
     background-color: var(--white);
     border: 2px solid var(--black);
     margin: 20px auto;
+    padding-bottom: 20px;
     box-shadow: 0 0 20px var(--black);
     justify-content: center;
     text-align: center;
-    max-width: 600px;
 }
 
 .card3 {
     margin-bottom: 0;
 }
  
-
+.cardtxtblock p {
+    padding: 10px 8px;
+}
 /* 
 .card1 p, 
 .card1 a, 
@@ -400,16 +421,43 @@ header {
 
 }
 
+
+/*-- CONTACT --*/
+
 .contactcontainer .contenttxt {
     display: block;
     background-image: url(/images/minimal-background.jpg);
     background-size: cover;
     background-position: bottom;
-    height: 300px;
+    height: 270px;
 }
 
-/*-- CONTACT --*/
+.linkbtn{
+    display: grid;
+    grid-template-columns: repeat(3, 25%) ;    
+    justify-content: center;
+    max-width: 500px;
+    margin: 20px auto;
+}
 
+.linkbtn button {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 50% 50%;
+    border: none;
+}
+
+.linkbtn button img {
+    scale: 4;
+}
+
+
+.contactcontainer .contenttxt img {
+    max-width: 30%;
+}
 
 
 /*-- FOOTER --*/
@@ -436,33 +484,7 @@ footer p {
     margin-top: -50px;
 }
 
-/*-- PROJECT --*/
 
-.card1, .card2, .card3 {
-    display: grid;
-    grid-template-columns: 50% 50%; 
-}
-
-.cardblock {
-    background-color: var(--color1);
-}
-
-.cardblock h3, .cardblock p {
-    text-align: left;
-    padding-left: 10px;
-}
-
-.cards img {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    object-fit: cover;
-}
-
-.cardtxtblock {
-    display: grid;
-    grid-template-rows: 60% 10% 20%;
-}
 
 
 }
@@ -504,6 +526,49 @@ footer p {
     padding: 10px 40px;
 }
 
+.card1, .card2, .card3 {
+    display: grid;
+    grid-template-columns: 40% 60%; 
+    padding-bottom: 0;
+    max-width: 700px;
+    height: 270px;
+}
+
+.cardblock {
+    background-color: var(--color1);
+}
+
+.cardblock h3, .cardblock p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.cards img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+.cardtxtblock {
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.cardtxtblock p {
+    text-align: left;
+}
+
+.tools {
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.tools p {
+    background-color: var(--white);
+    padding: 0 5px;
+}
+
 /*-- ABOUT --*/
 
 
@@ -533,7 +598,6 @@ h2 {
     font-size: 2.2em;
     padding-top: 80px;
     min-width: 300px;
-
 }
 
 h3 {
@@ -585,7 +649,7 @@ header {
 
 /*-- PROJECT --*/
 
-.cards {
+.cards { 
     display: grid;
     grid-template-columns: repeat(3, 30%);   
     justify-content: center;
@@ -594,10 +658,19 @@ header {
 .card1, .card2, .card3 {
     display: block;
     max-width: 400px;
-    height: 500px;
+    height: 500px; 
+} 
+
+.cardblock h3, .cardblock p, .tools {
+    text-align: center;
+    justify-content: center;
 }
 
 .cardblock {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
     background-color: var(--white);
 }
 
@@ -615,5 +688,52 @@ header {
 }
 
 
+/*-- MODAL --*/
+
+.modal {
+    width: 60%;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    border: 14px solid var(--color2);
+}
+
+.modal p {
+    text-align: center;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.openbtn {
+    display: block;
+    visibility: visible;
+    justify-content: center;
+    width: 60%;
+    height: fit-content;
+    font-size: 1em;
+    margin: 40px auto;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: var(--color1);
+    text-transform: uppercase;
+}
+
+.closebtn {
+    background-color: transparent;
+    border: none;
+}
+
+.closebtn img {
+    max-height: 80px;
+}
+
+.hide {
+  display: none;
+}
+
+.cardtxtblock {
+    display: block
 
 }

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Indie+Flower&family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/index.js"></script>
   
     <title>My Portfolio - Rena Hashimi</title>
 </head>
@@ -49,14 +50,11 @@
                 <p>These are some of the projects I have created since I started the course in Frontend Development at the Noroff School of technology and digital media.</p>
             </div>
             <div class="cards">
-                <div class="card1">
+                <div class="card1 card">
                     <div class="cardblock">
                         <img src="images/Buta Cuisine.jpg" alt="ButaCuisine-Project Exam 1">
                         <h3>Buta Cuisine</h3>
                         <p class="typeproject">"Projects Exam 1"</p>    
-                    </div>
-                    <div class="cardtxtblock">
-                        <p></p>
                         <div class="tools">
                             <p>HTML</p>
                             <p>CSS</p>
@@ -64,6 +62,14 @@
                             <p>WP</p>
                             <p>API</p>
                         </div>
+                    </div>
+                    <div class="cardtxtblock">
+                        <button class="openbtn">Read more</button>
+                            <dialog class="modal"> 
+                                <p>This is my Noroff Project Exam 1 and I was given the task of creating a blog page where I could show off the skills I have learned during my first year of study. I chose to create a food blog with recipes from my home country.</p>
+                                <button class="closebtn"><img src="/images/logo/close.png" alt="Closebutton"></button>
+                            </dialog>
+                        <p class="hide">This is my Noroff Project Exam 1 and I was given the task of creating a blog page where I could show off the skills I have learned during my first year of study. I chose to create a food blog with recipes from my home country.</p>
                         <div class="links"> 
                             <ul>
                                 <li><a href="https://butacuisine-rh-pe1.netlify.app">LIVE</a></li>
@@ -72,14 +78,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card2">
+                <div class="card2 card">
                     <div class="cardblock">
                         <img src="images/Rainydays.jpg" alt="Rainydays-Cross-Course Project">
                         <h3>Rainydays</h3>
                         <p class="typeproject">"Cross-Course Project"</p>
-                    </div>
-                    <div class="cardtxtblock">
-                        <p></p>
                         <div class="tools">
                             <p>HTML</p>
                             <p>CSS</p>
@@ -87,6 +90,14 @@
                             <p>WP</p>
                             <p>API</p>
                         </div>
+                    </div>
+                    <div class="cardtxtblock">
+                        <button class="openbtn">Read more</button>
+                            <dialog class="modal"> 
+                                <p>Rainydays is a fictional online store that sells rain jackets for men and women with a targeted age group between 30-50 years. This website has been developed several times during my first year and the last assignment was to develop an e-commerce site using Wordpress and API.</p>
+                                <button class="closebtn"><img src="/images/logo/close.png" alt="Closebutton"></button>
+                            </dialog>
+                        <p class="hide">Rainydays is a fictional online store that sells rain jackets for men and women with a targeted age group between 30-50 years. This website has been developed several times during my first year and the last assignment was to develop an e-commerce site using Wordpress and API.</p>
                         <div class="links"> 
                             <ul>
                                 <li><a href="https://rainydays-cms-renahashimi.netlify.app">LIVE</a></li>
@@ -95,18 +106,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="card3">
+                <div class="card3 card">
                     <div class="cardblock">
                         <img src="images/Treasures of Pangea.jpg" alt="Semester Project 1">
                         <h3>Treasure of Pangea</h3>
                         <p class="typeproject">"Semester Project 1"</p>
-                    </div>
-                    <div class="cardtxtblock">
-                        <p></p>
                         <div class="tools">
                             <p>HTML</p>
                             <p>CSS</p>
                         </div>
+                    </div>
+                    <div class="cardtxtblock">
+                        <button class="openbtn">Read more</button>
+                            <dialog class="modal"> 
+                                <p>This is my Noroff Semester Project 1 and in this project I created a website for "Community Science Museum - a fictional museum that opened in my town". This website should be suitable for children and their families, be informative and engaging. My website for the project/museum is called "Treasures of Pangea" and the main structural focus was HTML and CSS.</p>
+                                <button class="closebtn"><img src="/images/logo/close.png" alt="Closebutton"></button>
+                            </dialog>
+                        <p class="hide">This is my Noroff Semester Project 1 and in this project I created a website for "Community Science Museum - a fictional museum that opened in my town". This website should be suitable for children and their families, be informative and engaging. My website for the project/museum is called "Treasures of Pangea" and the main structural focus was HTML and CSS.</p>
                         <div class="links"> 
                             <ul>
                                 <li><a href="https://sp1-renahashimi.netlify.app">LIVE</a></li>
@@ -123,7 +139,7 @@
             <h2>&#9753; About me &#10087;</h2>
             <div class="contenttxtinfo">
                 <p>My name is Rena Hashimi, I am 34 years old and I live in Oslo. I am studying Frontend developer at the Noroff School of Technology and Digital Media and have now finished my first year.</p>
-                <p>Since I can remember I have always had a great passion for IT, coding, developing and design. After working in customer service for almost 13 years, I decided to fulfill my dream of becoming a developer.</p>
+                <p>Since I can remember I have always had a great passion for IT, coding, web developing and design. After working in customer service for almost 17 years, I decided to fulfill my dream of becoming a developer.</p>
                 <p>The first year in Noroff has been very educational and I am looking forward to next year to get the opportunity to gain more knowledge and further develop myself as a developer.</p> 
             </div>
             <div class="skillcontainer">
@@ -154,8 +170,8 @@
                         <p>Github</p>
                     </div>
                     <div>
-                        <img src="images/logo/api.png" alt="api-logo">
-                        <p>API</p>
+                        <img src="images/logo/vscode.png" alt="vscode-logo">
+                        <p>VSCode</p>
                     </div>
                     <div>
                         <img src="images/logo/netlify.png" alt="netlify-logo">
@@ -170,11 +186,12 @@
             <h2>&#9753; Contact &#10087;</h2>
             <div class="contenttxt">
                 <h3>Connect with me</h3>
-                <p>Email: r.ah@live.no</p>
-                <p>Github: renahashimi</p>
-                <p>Discord: rena.h</p>
+                <div class="linkbtn">
+                    <button><a href="mailto:r.ah@live.no"><img src="/images/logo/email.png" alt="Email-logo"></a></button>
+                    <button><a href="https://github.com/renahashimi"><img src="/images/logo/githublogo.png" alt="Github-logo"></a></button>
+                    <button><a href="https://www.instagram.com/renahashimi/"><img src="/images/logo/instagram.png" alt="Instagram-logo"></a></button>
+                </div>
             </div>
-
         </section>
 
         <!-- GO TO TOP
