@@ -1,13 +1,17 @@
 /*-- MODAL --*/
 const modal = document.querySelector(".modal");
-const openModal = document.querySelector(".openbtn");
-const closeModal = document.querySelector(".closebtn");
+const openModals = document.querySelectorAll(".openbtn");
+const closeModals = document.querySelectorAll(".closebtn");
 
-openModal.addEventListener("click", () => {
-    modal.showModal();
-})
 
-closeModal.addEventListener("click", () => {
-    modal.close();
-})
+openModals.forEach(openModal => {
+    openModal.addEventListener("click", () => {
+        openModal.nextElementSibling.showModal();
+    });
+});
 
+closeModals.forEach(closeModal => {
+    closeModal.addEventListener("click", () => {
+        closeModal.parentNode.close();
+    });
+});
