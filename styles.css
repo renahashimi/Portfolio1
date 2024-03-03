@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(/images/neutral-soft-abstract.jpeg);
+    background-image: url(/images/neutralbeige.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-color: #fff;
@@ -618,7 +618,7 @@ header {
 
 .cards { 
     display: grid;
-    grid-template-columns: repeat(3, 30%);   
+    grid-template-columns: repeat(3, 31%);   
     justify-content: center;
     font-size: medium;
 }
