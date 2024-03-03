@@ -5,7 +5,8 @@
     --color2: #bba99b;
     --color3: #B4B4B4;
     --color4: #0000004a;
-    --carattere: "Carattere", cursive;
+    --color5: #ffffff6d;
+    --allison: "Allison", cursive;
     --indie: "Indie Flower", cursive;
     --itim: "Itim", cursive;
     --gill: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -53,7 +54,7 @@ h1 {
     font-size: 1.6em;
     font-family: var(--gill);
     text-transform: uppercase;
-    margin: 30px;
+    margin: 30px 30px 15px;
 }
  
 h2 {
@@ -81,7 +82,7 @@ p {
 }
 
 .contenttxt, .contenttxtinfo {
-    background-color: #ffffffa8; 
+    background-color: var(--color5); 
     margin: auto; 
     padding: 20px 0;
     text-align: center;
@@ -90,25 +91,19 @@ p {
 }
 
 .contenttxt h3 {
-    font-family: var(--carattere);
-    font-size: 2em;
+    font-family: var(--allison);
+    font-size: 2.4em;
     margin: 0;
     padding: 5px 0 10px;
     text-transform: capitalize;
+    letter-spacing: 0.05em;
 }
 
-.contenttxtinfo p {
-    display: block;
-    padding: 5px; 
-    max-width: 800px;   
-    font-size: 1.1em; 
-    text-align: center; 
-    margin: auto;
-}
-
-.contenttxtinfo p {
+.contenttxt p, .contenttxtinfo p  {
+    max-width: 950px;
+    padding: 20px;
     text-align: left;
-    padding: 15px;
+    margin: auto;
 }
 
 .homecontainer, 
@@ -123,10 +118,10 @@ p {
 @keyframes move {
     from {
         transform: translateX(-100%);
-      }
-      to {
+    }
+    to {
         transform: translateX(0%);
-      }
+    }
     
 }
 .homecontainer {
@@ -141,6 +136,7 @@ p {
     display: none;
     visibility: hidden;
 }
+
 
 
 /*-- NAVIGATION --*/
@@ -210,7 +206,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: left;
     overflow: hidden;
     width: 100%;
     height: 400px;
@@ -227,15 +223,14 @@ header {
 }
 
 .hometxt {
-    /* background-color: rgb(255, 250, 250, 0.35); */
     justify-content: left;
     margin-top: 30px;
 }
 
 .hometxt p {
-    font-size: 2.6em;
-    font-family: var(--carattere);
-    margin: -20px 30px 0;
+    font-size: 3.5em;
+    font-family: var(--allison);
+    margin: -30px 30px 0;
 }
 
 .myimg img {
@@ -247,40 +242,9 @@ header {
     float: right;
 }
 
-/* .box1 {
-    display: block;
-    width: 80%;
-    max-width: 400px;
-    height: 350px;
-    background-color: var(--pink2);
-}
-
-.box2 {
-    display: block;
-    position: absolute;
-    width: 80%;
-    max-width: 370px;
-    height: 270px;
-    margin: 30px;
-    border-radius: 0 0 30% 0;
-    background-color: var(--pink1);
-} */
-/* 
-.box3 {
-    display: block;
-    position: relative;
-    width: 50%;
-    min-width: 250px;
-    min-height: 250px;
-    margin: 250px 10px 0 -80px;
-    border-radius: 20% 70px;
-    transform: rotate(10deg);
-    background-color: var(--pink3);
-} */
 
 
 /*-- PROJECTS --*/
-
 
 .projectcontainer {
     display: block;
@@ -294,8 +258,11 @@ header {
 }
 
 .cards {
-    background: linear-gradient(0.35turn, var(--color2), var(--white) 50%, var(--color2));
     padding: 10px 0 30px;
+    background-image: url(/images/beige-earth-tone.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
     margin: auto;
 }
 
@@ -322,16 +289,6 @@ header {
 .cardtxtblock p {
     padding: 10px 8px;
 }
-/* 
-.card1 p, 
-.card1 a, 
-.card2 p, 
-.card2 a, 
-.card3 p, 
-.card3 a {
-    padding: 10px;
-} */
-
 
 .links ul {
     display: flex;
@@ -356,8 +313,9 @@ header {
 }
 
 .links:hover li:hover {
-    transform: translateY(-7px);
-    transition: transform 0.2s;
+    transform: translateY(-3px);
+    transition: transform 0.6s;
+    scale: 130%;
     border: 1px solid var(--black);
 }
 
@@ -377,12 +335,8 @@ header {
 }
 
 
+
 /*-- ABOUT --*/
-
-
-.aboutcontainer {
-}
-
 
 .skillcontainer {
     background-color: var(--color1);    
@@ -411,15 +365,15 @@ header {
 
 .skills p {
     margin-top: -10px;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .skills img {
     max-width: 60%;
     margin: 10px auto;
     justify-content: center;
-
 }
+
 
 
 /*-- CONTACT --*/
@@ -454,10 +408,15 @@ header {
     scale: 4;
 }
 
-
 .contactcontainer .contenttxt img {
     max-width: 30%;
 }
+
+.contactcontainer .contenttxt img:hover {
+    scale: 5.5;
+    transition: 0.5s ease-in-out;
+}
+
 
 
 /*-- FOOTER --*/
@@ -483,10 +442,6 @@ footer p {
 .myimg {
     margin-top: -50px;
 }
-
-
-
-
 }
 
 
@@ -499,6 +454,12 @@ footer p {
 .navigation li {
     margin: 0 auto 10px;
 }
+
+p, .contenttxt p, .contenttxtinfo p {
+    font-size: 1.2em;
+}
+
+
 
 /*-- HOME --*/
 
@@ -518,20 +479,14 @@ footer p {
 }
 
 
-
-
 /*-- PROJECT --*/
-
-.contenttxt p, .contenttxtinfo p  {
-    padding: 10px 40px;
-}
 
 .card1, .card2, .card3 {
     display: grid;
     grid-template-columns: 40% 60%; 
     padding-bottom: 0;
-    max-width: 740px;
-    height: 270px;
+    max-width: 750px;
+    height: 350px;
 }
 
 .cardblock {
@@ -545,7 +500,7 @@ footer p {
 
 .cards img {
     max-width: 100%;
-    max-height: 140px;
+    height: 180px;
     padding: 0;
     margin: 0;
     object-fit: cover;
@@ -553,12 +508,12 @@ footer p {
 
 .cardtxtblock {
     display: grid;
-    grid-template-rows: 75% 25%;
+    grid-template-rows: 75% 20%;
 }
 
 .cardtxtblock p {
     text-align: left;
-    padding: 3px 20px 0;
+    padding: 3px 10px 0;
 }
 
 .tools {
@@ -571,8 +526,8 @@ footer p {
     padding: 0 5px;
 }
 
-/*-- ABOUT --*/
 
+/*-- ABOUT --*/
 
 .skills {
     grid-template-columns: repeat(8, auto);
@@ -588,7 +543,11 @@ footer p {
 
 /*-- CONTACT --*/
 
+.contenttxt h3 {
+    font-size: 3em;
 }
+}
+
 
 @media only screen and (min-width: 1000px) {
 
@@ -607,7 +566,7 @@ h3 {
 }
 
 p, .contenttxt p, .contenttxtinfo p {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .contenttxt h3 {
@@ -649,6 +608,10 @@ header {
 .homecontainer {
     background-position: top; 
 }
+
+.homecontent {
+    padding-top: 40px;
+}
  
 
 /*-- PROJECT --*/
@@ -657,6 +620,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 30%);   
     justify-content: center;
+    font-size: medium;
 }
 
 .card1, .card2, .card3 {
@@ -686,23 +650,35 @@ header {
 
 .cards img {
     max-height: 200px;
-    min-height: 190px;
+    height: 190px;
     object-fit: cover;
 }
 
+.cardtxtblock {
+    display: block;
+    padding-top: 5px;
+}
 
 /*-- ABOUT --*/
 
 .skills {
     width: 100%;
     margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+
+/*-- CONTACT --*/
+
+.contenttxt h3 {
+    font-size: 3.2em;
 }
 
 
 /*-- MODAL --*/
 
 .modal {
-    width: 60%;
+    width: 70%;
     font-size: 1.3em;
     letter-spacing: 0.1em;
     line-height: 2em;
@@ -727,11 +703,19 @@ header {
     font-size: 1em;
     font-family: var(--itim);
     margin: 40px auto;
-    border-radius: 30px;
-    padding: 5px 10px;
-    background-color: var(--color1);
+    border: 3px solid var(--color2);
+    padding: 5px;
+    transition: 1s ease-in-out;
+    background-color: var(--white);
     text-transform: uppercase;
-    box-shadow: inset 0 0 10px var(--black);
+    box-shadow: inset 0 0 10px var(--color2);
+}
+
+.openbtn:hover {
+    scale: 110%;
+    transition: 0.8s ease-in-out;
+    border-radius: 40px;
+    border: 3px solid var(--color1);
 }
 
 .closebtn {
@@ -739,16 +723,13 @@ header {
     border: none;
 }
 
-img.closeimg {
+img.closeimg  {
     max-width: 60px;
-    min-height: 60px;
+    height: 60%;
 }
 
 .hide {
   display: none;
 }
-
-.cardtxtblock {
-    display: block
 
 }
