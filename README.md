@@ -5,8 +5,10 @@ Netlify: https://renahashimi-portfolio.netlify.app
 
 ## Description
 
+This is my portfolio for my first year at Noroff School of Technology and Digital Media. This porfolio contains the 3 main projects that I have created.
+
 This website contains these pages:
-Home / index.html (all info in one page)
+- Home / index.html (all info in one page)
 
 ## Built With
 - HTML
@@ -14,11 +16,14 @@ Home / index.html (all info in one page)
 - JAVASCRIPT
 
 ## Getting Started
+
 ### Installing
 Clone the repo:
-git clone https://github.com/renahashimi/portfolio1.git
+git clone https://github.com/renahashimi/Portfolio1.git
+
 ### Running
-Netlify: https://renahashimi-portfolio.netlify.app
-VSCode: index.html :: Live Server
-Contact
+- Netlify: https://renahashimi-portfolio.netlify.app
+- VSCode: index.html :: Live Server
+- 
+## Contact
 Discord username: rena.h
