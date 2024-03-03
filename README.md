@@ -24,10 +24,10 @@ Clone the repo:
 git clone https://github.com/renahashimi/Portfolio1.git
 ```
 
-
 ### Running
 - Netlify: https://renahashimi-portfolio.netlify.app
 - VSCode: index.html :: Live Server
-- 
+
+
 ## Contact
 Discord username: rena.h
