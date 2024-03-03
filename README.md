@@ -19,7 +19,11 @@ This website contains these pages:
 
 ### Installing
 Clone the repo:
+
+```bash
 git clone https://github.com/renahashimi/Portfolio1.git
+```
+
 
 ### Running
 - Netlify: https://renahashimi-portfolio.netlify.app
